@@ -1,6 +1,5 @@
 using System;
 using System.Threading.Tasks;
-using Oculus.Interaction;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -72,7 +71,7 @@ public class ModManager : MonoBehaviour
                     else 
                     {
                         modObject.transform.GetChild(3).gameObject.SetActive(true);
-                        modObject.transform.GetChild(3).GetComponent<InteractableUnityEventWrapper>().WhenSelect.AddListener(delegate { RemoveMod(searchResults.title); });
+                        //modObject.transform.GetChild(3).GetComponent<InteractableUnityEventWrapper>().WhenSelect.AddListener(delegate { RemoveMod(searchResults.title); });
                     }
                 }
                 catch (Exception ex)
@@ -85,7 +84,7 @@ public class ModManager : MonoBehaviour
                     }
                 }
 
-                var interactableWrapper = modObject.GetComponent<InteractableUnityEventWrapper>();
+                /*var interactableWrapper = modObject.GetComponent<InteractableUnityEventWrapper>();
                 interactableWrapper.WhenSelect.AddListener(delegate
                 {
                     var currentSelectedGO = EventSystem.current.currentSelectedGameObject;
@@ -94,7 +93,7 @@ public class ModManager : MonoBehaviour
                     var mod = currentSelectedGO.name;
                     apiHandler.modID = mod;
                     CreateModPage();
-                });
+                });*/
             }
 
             await SetModImage();
@@ -132,7 +131,7 @@ public class ModManager : MonoBehaviour
                 bool hasMod = JNIStorage.apiClass.CallStatic<bool>("hasMod", InstanceButton.GetInstance(), mp.title);
                 DLDImage.SetActive(hasMod);
                 DLImage.SetActive(!hasMod);
-                downloadButton.GetComponent<InteractableUnityEventWrapper>().enabled = !hasMod;
+                //downloadButton.GetComponent<InteractableUnityEventWrapper>().enabled = !hasMod;
             }
             catch (Exception ex)
             {
