@@ -85,11 +85,14 @@ public class ModManager : MonoBehaviour
                     }
                 }
 
-                modObject.GetComponent<InteractableUnityEventWrapper>().WhenSelect.AddListener(delegate
+                var interactableWrapper = modObject.GetComponent<InteractableUnityEventWrapper>();
+                interactableWrapper.WhenSelect.AddListener(delegate
                 {
-                    EventSystem.current.SetSelectedGameObject(modObject);
-                    GameObject mod = GameObject.Find(EventSystem.current.currentSelectedGameObject.transform.name);
-                    apiHandler.modID = mod.ToString().Replace("(UnityEngine.GameObject)", "");
+                    var currentSelectedGO = EventSystem.current.currentSelectedGameObject;
+                    EventSystem.current.SetSelectedGameObject(currentSelectedGO);
+
+                    var mod = currentSelectedGO.name;
+                    apiHandler.modID = mod;
                     CreateModPage();
                 });
             }
