@@ -18,4 +18,4 @@ MonoBehaviour:
   faceTracking: 0
   lipsyncTracking: 0
   eyeTracking: 0
-  latelatching: 0
+  latelatching: 1

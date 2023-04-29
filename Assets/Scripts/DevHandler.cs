@@ -68,40 +68,4 @@ public class DevHandler : MonoBehaviour
         }
     }
 
-    public void DevModsButton()
-    {
-        if (DevToggle.isOn)
-        {
-            DevToggle.isOn = false;
-        }
-        else
-        {
-            DevToggle.isOn = true;
-        }
-    }    
-        
-    public void ADBButton()
-    {
-        if (ADBToggle.isOn)
-        {
-            ADBToggle.isOn = false;
-        }
-        else
-        {
-            ADBToggle.isOn = true;
-        }
-    }
-    
-    public void RAMButton()
-    {
-        if (RAMSetterToggle.isOn)
-        {
-            RAMSetterToggle.isOn = false;
-        }
-        else
-        {
-            RAMSetterToggle.isOn = true;
-        }
-    }    
-
 }

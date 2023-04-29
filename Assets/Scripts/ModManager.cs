@@ -71,7 +71,7 @@ public class ModManager : MonoBehaviour
                     else 
                     {
                         modObject.transform.GetChild(3).gameObject.SetActive(true);
-                        //modObject.transform.GetChild(3).GetComponent<InteractableUnityEventWrapper>().WhenSelect.AddListener(delegate { RemoveMod(searchResults.title); });
+                        modObject.transform.GetChild(3).GetComponent<Button>().onClick.AddListener(delegate { RemoveMod(searchResults.title); });
                     }
                 }
                 catch (Exception ex)
@@ -83,17 +83,6 @@ public class ModManager : MonoBehaviour
                         modObject.transform.GetChild(3).gameObject.SetActive(false);
                     }
                 }
-
-                /*var interactableWrapper = modObject.GetComponent<InteractableUnityEventWrapper>();
-                interactableWrapper.WhenSelect.AddListener(delegate
-                {
-                    var currentSelectedGO = EventSystem.current.currentSelectedGameObject;
-                    EventSystem.current.SetSelectedGameObject(currentSelectedGO);
-
-                    var mod = currentSelectedGO.name;
-                    apiHandler.modID = mod;
-                    CreateModPage();
-                });*/
             }
 
             await SetModImage();
@@ -102,6 +91,8 @@ public class ModManager : MonoBehaviour
 
     public async void CreateModPage()
     {
+        var mod = EventSystem.current.currentSelectedGameObject.name;
+        apiHandler.modID = mod;
         MetaParser mp = apiHandler.GetModInfo();
         instanceMenu.SetActive(false);
         modSearchMenu.SetActive(false);
@@ -131,7 +122,7 @@ public class ModManager : MonoBehaviour
                 bool hasMod = JNIStorage.apiClass.CallStatic<bool>("hasMod", InstanceButton.GetInstance(), mp.title);
                 DLDImage.SetActive(hasMod);
                 DLImage.SetActive(!hasMod);
-                //downloadButton.GetComponent<InteractableUnityEventWrapper>().enabled = !hasMod;
+                downloadButton.GetComponent<Button>().enabled = !hasMod;
             }
             catch (Exception ex)
             {
