@@ -4,26 +4,17 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="185aba63-5081-4c83-ac9e-c721709d14e5" name="Changes" comment="YVR Work, wait for System Update">
+    <list default="true" id="185aba63-5081-4c83-ac9e-c721709d14e5" name="Changes" comment="YVR">
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/gradleTemplate.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/gradleTemplate.properties.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/launcherTemplate.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Android/launcherTemplate.gradle.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/baseProjectTemplate.gradle.DISABLED" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/baseProjectTemplate.gradle.DISABLED.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/gradleTemplate.properties.DISABLED" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/gradleTemplate.properties.DISABLED.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/launcherTemplate.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/launcherTemplate.gradle.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/lib-release.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/lib-release.aar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/mainTemplate.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/mainTemplate.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/mainTemplate.gradle.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/mainTemplate.gradle.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/AndroidResolverDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/AndroidResolverDependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

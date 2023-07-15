@@ -30,7 +30,10 @@ public class UIHandler : MonoBehaviour
                 profileName = JNIStorage.apiClass.GetStatic<string>("profileName");
             }
 
-            GetTexturePlusName();
+            if (pfpHolder.texture == null)
+            {
+                GetTexturePlusName();
+            }
         }
         
         if (System.DateTime.Now.Minute.ToString().Length == 1)
@@ -51,6 +54,7 @@ public class UIHandler : MonoBehaviour
     {
         using (UnityWebRequest pfp = UnityWebRequestTexture.GetTexture(pfpUrl))
         {
+            pfp.SetRequestHeader("User-Agent", "QuestCraft");
             var requestTask = pfp.SendWebRequest();
 
             while (!requestTask.isDone)
