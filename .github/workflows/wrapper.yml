@@ -34,12 +34,6 @@ jobs:
           restore-keys: |
             Library-
 
-
-      # Return License
-      - name: Return license
-        uses: game-ci/unity-return-license@v2
-        if: always()
-
       # Build
       - name: Build APK
         uses: game-ci/unity-builder@v4
